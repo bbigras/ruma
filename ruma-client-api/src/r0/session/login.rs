@@ -18,7 +18,7 @@ ruma_api! {
     request: {
         /// Identification information for the user.
         #[serde(flatten)]
-        pub user: UserInfo,
+        pub user: Option<UserInfo>,
 
         /// The authentication mechanism.
         #[serde(flatten)]
